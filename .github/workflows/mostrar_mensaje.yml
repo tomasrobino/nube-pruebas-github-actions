@@ -10,5 +10,6 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Run tests
-      run:
+      run: |
         echo "Running tests"
+        java --version
