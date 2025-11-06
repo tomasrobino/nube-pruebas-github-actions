@@ -18,5 +18,6 @@ jobs:
     - name: Run tests
       run: |
         echo "Running tests"
+        java --version
         javac src/Main.java
         java src/Main
