@@ -14,5 +14,5 @@ jobs:
         echo "Running tests"
         java --version
         ls
-        javac src/Hola.java
-        java src/Hola.java
+        javac src/Main.java
+        java src/Main.java
