@@ -9,8 +9,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
+    - name: Set up Java
+      uses: actions/setup@v4
+      with:
+        java-version: "17"
+
     - name: Run tests
       run: |
         echo "Running tests"
         javac src/Main.java
-        java src/Main.java
+        java src/Main
