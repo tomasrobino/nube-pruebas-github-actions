@@ -1,13 +1,13 @@
 name: Git action 1
 
 on:
-    push:
-        branches: [ master ]
+  push:
+    branches: [ master ]
 
 jobs:
-    build:
-        runs-on: ubuntu-latest
-        steps:
-        - uses: actions/checkout@v4
-        - name: Run tests
-            run: echo "Running tests"
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Run tests
+      run: echo "Running tests"
